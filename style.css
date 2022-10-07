@@ -2,24 +2,17 @@ body {
     margin: 0;
     padding: 10px;
     background-color: #C4D0FF;
-    font-family: 'Helvetica';
+    font-family:'Segoe UI';
+    text-align: center;
 }
 
 h1 {
-    text-shadow: 0 -2px 0 #999;
+    text-shadow: none;
     text-align: center;
     font-size: 40px;
     padding: 0;
-    margin: 200px 0 30px 0;
+    margin: 100px 0 30px 0;
     color: #919191;
-}
-
-h2 {
-    text-align: center;
-}
-
-h3 {
-    text-align: center;
 }
 
 .cat {
@@ -31,10 +24,36 @@ h3 {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: 0 50px 0 50px
 }
 
 .time_style {
-    color:#BB98FF;
+    color:#000;
     font-size:50pt;
     text-align:center;
+    text-shadow: 0;
+    font-family: Arial, Helvetica, sans-serif;
     }
+
+.nnn {
+    height: 50px;
+    width: 50px;
+}
+
+.text_border {
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 0 5% 0 5%;
+    text-align: center;
+    padding: 5px;
+    outline: 1px solid rgb(164, 164, 164);
+}
+
+.color_button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+
+}
