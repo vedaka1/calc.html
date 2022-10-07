@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        // PhoneGap event handler
+        document.addEventListener("deviceready", onDeviceReady, false);
+        function onDeviceReady() {
+            console.log("PhoneGap is ready");
+        }
+    </script>
+    <script type="text/javascript" >
+function startTime(){
+var d=new Date();
+var h=d.getHours();
+var m=d.getMinutes();
+var s=d.getSeconds();
+m=FullTime(m);
+s=FullTime(s);
+document.getElementById('times').innerHTML = h+":"+m+":"+s;
+t=setTimeout('startTime()',500);
+}
+function FullTime(i)
+{
+if (i<10){
+i="0" + i;
+}
+return i;
+}
+</script>
+<style>#times {
+    color:#BB98FF;
+    font-size:50pt;
+    textalign:center;
+    }
+    </style>
+</head>
+<body onload="startTime()">
+
+    <h1>Часы</h1>
+    <h1 id="times"></h1>
+    <input type="color" id="colorPicker" name="bgInput" onChange="changeColor();"/>
+    <script src="my.js"></script>
+    <h2>Часы 2</h2>
+    <h3>Часы 3</h3>
+    <p>
+        Далеко-далеко за словесными горами, в стране гласных и согласных живут
+        рыбные тексты. Пустился города последний всемогущая которое большой
+        толку прямо реторический. Рыбного строчка, образ живет своего ведущими
+        дороге ее языкового точках рот? Lorem ее его строчка даже это текста,
+        вопрос однажды не, точках оксмокс вскоре что. Своего, текста?
+      </p>
+      <p>
+        Семь они вдали он взгляд запятой подзаголовок рекламных злых, рукопись
+        журчит решила обеспечивает прямо. Вдали заглавных меня своего, осталось
+        великий lorem власти даже выйти семь взобравшись которое журчит знаках
+        это страна бросил вскоре! За lorem ты жизни, точках взобравшись
+        подпоясал назад вскоре необходимыми всемогущая!
+      </p>
+      <p>
+        Языкового заголовок которое меня рыбного, ведущими, не точках залетают
+        дал продолжил даль скатился послушавшись даже запятой одна всеми своих
+        щеке возвращайся семантика, имеет взгляд знаках он подпоясал эта!
+        Грамматики, океана. Языкового, необходимыми она диких бросил пояс
+        инициал имени строчка?
+      </p>
+      <p>
+        Всеми запятых вскоре текста предупреждал заглавных обеспечивает, по всей
+        дал это наш толку коварных раз своего коварный, имеет щеке букв!
+        Запятых, свой. Приставка о даль рыбными, домах языком пор всемогущая
+        заманивший все, рекламных запятых раз составитель букв собрал пустился
+        даже! Точках необходимыми, правилами домах дороге переписали текст моей
+        строчка безопасную все снова. Ее речью безорфографичный повстречался мир
+        путь заголовок переписали вопроса назад деревни живет единственное
+      </p>
+      <p>
+        решила, страну текста за толку жаренные? Силуэт своего буквоград
+        ведущими вопрос взобравшись сих власти это проектах правилами! Вдали
+        живет вопрос наш, подпоясал маленький диких залетают курсивных языкового
+        вопроса, скатился проектах необходимыми. Текстами рыбного которой
+        которое маленький она он вскоре, lorem послушавшись, использовало, даль
+        щеке языком сбить. Дорогу? Себя это рекламных которой агентство
+        переписывается, переулка вопрос последний возвращайся ее послушавшись
+        текст предложения великий там вершину?
+      </p>
+      <p>
+        Назад заголовок семь коварный ему грустный? Собрал lorem безопасную,
+        злых деревни буквоград имени. Предупредила рот коварный возвращайся
+        рыбного назад первую своих власти, даже продолжил заманивший снова путь
+        имени по всей осталось рыбными. Всеми ручеек заголовок бросил строчка,
+        свой семантика журчит там имени свое образ!
+      </p>
+      <div class="wrapper">
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">Нажми</a>
+      <button>Кнопка 1</button>
+      <button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAaVBMVEU6V5r///8nSpTP1OMzUpd6i7kvT5acqMgqTJU0U5hoe62frMyGlr+5wtgjSJNleKvj5e7V2ebu8PaWo8VedaxYb6gLPI5yhranss/Ey96yvNVJZKJPaaSRnsJEX5/r7fSDk7329/sXQZBoKWjuAAACdElEQVR4nO3c3XKiQBRFYcJPD8ToqISYmGSM8/4PORWrEgU1N9On7X1qrVsumq9A6Ea0WFfOK6qn0ndFVRbOQ6gfQv0Q6odQP4T6IdQPoX4I9UOoH0L9EOqHUD+E+iHUD6F+CPVDqB9C/RDqh1A/hPoh1A+hfgj1Q6gfQv0Q6odQP4T6IdQPoX4IbapDWy4OlWXbhtpyrBsIQ11vnl+q1aGqmm/75tVwuOTC9u19dTftwfAoJhbWf2a7M58nYWiWF3yehM8XfX6E5fYK0I3w2hH0Igwfe+fC4tJF1JOw7q8DfQhfL98n/Ajrjx+ALoTt3LswnE9G18uvdo0D4dt66uuHdvGV5fIpkbC734+Bu6HtkoycSlhvJsKZ6ar3tFTCZgzcPyY6gjcTLpOMeuhGwtUiybCf3UiYcDqMMFIIDUMYKYSGIfyvuu/CVLjoTjPcB1Ph8PvY+2RO83h/kukk1VD487I+2TmbhXDemu1EJsJZMNuJTISWD6KyEO433q80a/fX0t3gXbiyfFEhC+GL2S58loNwa3k7zEJoejvMQvjgXmh6O8xCaPv821DYNb+OTV40WfbHTb3tVxiWC5cufFduxsLq73Gb6aeQpxjRQmgYwkghNAxhpBAahjBSCA1DGCmEhiGMFELDEEYKoWEII4XQMISRQmgYwkghNAxhpBAahjBSZ7/scicshtko0zdKxyU7XcKodED+CctBCPVDqB9C/RDqh1A/hPoh1A+hfgj1Q6gfQv0Q6odQP4T6IdQPoX4I9UOoH0L9EOqHUD+E+iHUD6F+CPVDqB9C/RDqh1A/hPoh1A+hfgj1Q6gfQv0Q6ude+A/APSEZxb/5OgAAAABJRU5ErkJggg==" alt="Кнопка «button»"></button>
+      <label>Кнопка </label>
+      <input type="radio"></input>
+      <input type="text">Я текст</input>
+      <input type="date"></input>
+      <img src="https://i.pinimg.com/736x/5b/03/2b/5b032b65c77bfa83e512db7940b3cff0.jpg" alt="КОТ КРАСИВЫЙ" class="cat"</img>
+      </div>
+</body>
+</html>
