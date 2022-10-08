@@ -1,6 +1,8 @@
 function changeColor(){
-    let color = document.querySelector('#colorPicker').value;
-    document.body.style.backgroundColor = color;
+    let color1 = document.querySelector('#colorPicker1').value;
+    let color2 = document.querySelector('#colorPicker2').value;
+    document.body.style.background = 'linear-gradient('+color1+','+color2+')';
+    
   }
 
 function startTime(){
