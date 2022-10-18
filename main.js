@@ -5,6 +5,12 @@ function changeColor(){
     
   }
 
+function calculate(){
+  let a = document.querySelector('#calc_field').value;
+  let b = eval(a);
+  document.getElementById('calc_field').value = b;
+}
+
 function startTime(){
     var d=new Date();
     var h=d.getHours();

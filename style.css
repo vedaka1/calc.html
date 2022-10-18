@@ -3,7 +3,7 @@
 body {
     margin: 0 5% 0 5%;
     padding: 10px;
-    background-color: #fff;
+    background: linear-gradient(rgb(134, 186, 255), rgb(255, 255, 255));
     font-family:'Segoe UI';
 }
 
@@ -95,4 +95,13 @@ p {padding: 10px;}
     100% {
         transform: rotate(360deg);
     }
+}
+
+.calc {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.calc_field {
+    width: auto;
 }
