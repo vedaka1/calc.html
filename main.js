@@ -23,49 +23,23 @@ function startTime(){
     return i;
     }
 
-let buffer = "0"
-
 const screen = document.querySelector('.screen');
+const buttons = document.querySelectorAll('.btn')
 
-function buttonClick(value){
-  if(isNaN(value)){
-    handleSymbol(value);
-  }else{
-    handleNumber(value)
-  }
-  screen.innerText = buffer;
-}
-
-function handleSymbol(symbol){
-  switch(symbol){
-    case 'C':
-      buffer = '0';
-      break;
-    case '=':
-      buffer = eval(screen)
-      break;
-    case '←':
-      if(buffer.length === 1){
-        buffer = '0'
-      }else{
-        buffer = buffer.toString(0, buffer.length - 1);
-      }
-      break
-    case '+':
-    case '-':
-    case '×':
-    case '÷':
-      handleMath(symbol);
-      break;
-  }
-}
-
-function handleMath(symbol){
-  if(buffer === '0'){
-    return;
-  }
-
-  const intBuffer = parseInt(buffer);
-
-  
-}
+buttons.forEach((item) => {
+  item.onclick = () => {
+    if (item.id == 'clear') {
+      display.innerText = '0';
+    } else if (item.id == 'backspace') {
+      let string = display.innerText.toString();
+      display.innerText = string.substr(0, string.length - 1);
+    } else if (display.innerText != '' && item.id == 'equal') {
+      display.innerText = eval(display.innerText);
+    } else if (display.innerText == '' && item.id == 'equal') {
+      display.innerText = 'Empty!'
+      setTimeout(() => (display.innerText = ''), 2000);
+    } else {
+      display.innerText += item.id;
+    }
+  } 
+})

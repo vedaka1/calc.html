@@ -7,8 +7,6 @@
     <script src="components/loader.js"></script>
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="calc.css">
-    
-    <script src="main.js"></script>
     <script>
         // PhoneGap event handler
         document.addEventListener("deviceready", onDeviceReady, false);
@@ -22,40 +20,42 @@
 <body>
     <div class="calc">
       
-        <section class="screen">
+        <section class="screen" id="display">
             0
         </section>
         
         <section class="calc-buttons">
             <div class="calc-button-row">
-                <button class="btn">C</button>
-                <button class="btn double">&larr;</button>
-                <button class="btn" onclick="calculate();">&divide;</button>
+                <button class="btn" id="clear">C</button>
+                <button class="btn double"id="backspace">&larr;</button>
+                <button class="btn" id="/">&divide;</button>
             </div>
             <div class="calc-button-row">
-                <button class="btn" onclick="">7</button>
-                <button class="btn" onclick="">8</button>
-                <button class="btn" onclick="">9</button>
-                <button class="btn" onclick="">&times;</button>
+                <button class="btn"id="7">7</button>
+                <button class="btn"id="8">8</button>
+                <button class="btn"id="9">9</button>
+                <button class="btn"id="*">&times;</button>
             </div>
             <div class="calc-button-row">
-                <button class="btn" onclick="">4</button>
-                 <button class="btn" onclick="">5</button>
-                 <button class="btn" onclick="">6</button>
-                 <button class="btn" onclick="">&minus;</button>
+                <button class="btn" id="4">4</button>
+                 <button class="btn" id="5">5</button>
+                 <button class="btn" id="6">6</button>
+                 <button class="btn" id="-">&minus;</button>
             </div>
             <div class="calc-button-row">
-                <button class="btn" onclick="">1</button>
-                <button class="btn" onclick="">2</button>
-                <button class="btn" onclick="">3</button>
-                <button class="btn" onclick="">&plus;</button>
+                <button class="btn" id="1">1</button>
+                <button class="btn" id="2">2</button>
+                <button class="btn" id="3">3</button>
+                <button class="btn" id="+">&plus;</button>
             </div>
             <div class="calc-button-row">
-                <button class="btn">0</button>
-                <button class="btn triple" onclick="calculate()">&equals;</button>
+                <button class="btn"id="0">0</button>
+                <button class="btn triple" onclick="calculate()"id="equal">&equals;</button>
             </div>
         </section>
         
       </div>
+      <a class="link" href="clock.html">Часы</a>
 </body>
+<script src="main.js"></script>
 </html>
