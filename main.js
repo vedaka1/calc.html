@@ -5,12 +5,6 @@ function changeColor(){
     
   }
 
-function calculate(){
-  let a = document.querySelector('#calc_field').value;
-  let b = eval(a);
-  document.getElementById('calc_field').value = b;
-}
-
 function startTime(){
     var d=new Date();
     var h=d.getHours();
@@ -28,3 +22,50 @@ function startTime(){
     }
     return i;
     }
+
+let buffer = "0"
+
+const screen = document.querySelector('.screen');
+
+function buttonClick(value){
+  if(isNaN(value)){
+    handleSymbol(value);
+  }else{
+    handleNumber(value)
+  }
+  screen.innerText = buffer;
+}
+
+function handleSymbol(symbol){
+  switch(symbol){
+    case 'C':
+      buffer = '0';
+      break;
+    case '=':
+      buffer = eval(screen)
+      break;
+    case '←':
+      if(buffer.length === 1){
+        buffer = '0'
+      }else{
+        buffer = buffer.toString(0, buffer.length - 1);
+      }
+      break
+    case '+':
+    case '-':
+    case '×':
+    case '÷':
+      handleMath(symbol);
+      break;
+  }
+}
+
+function handleMath(symbol){
+  if(buffer === '0'){
+    return;
+  }
+
+  const intBuffer = parseInt(buffer);
+
+  
+}
