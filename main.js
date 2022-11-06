@@ -29,7 +29,7 @@ const buttons = document.querySelectorAll('.btn')
 buttons.forEach((item) => {
   item.onclick = () => {
     if (item.id == 'clear') {
-      display.innerText = '0';
+      display.innerText = '';
     } else if (item.id == 'backspace') {
       let string = display.innerText.toString();
       display.innerText = string.substr(0, string.length - 1);

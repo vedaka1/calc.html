@@ -3,16 +3,15 @@
 body {
     margin: 0 5% 0 5%;
     padding: 10px;
-    background: linear-gradient(rgb(134, 186, 255), rgb(230, 150, 255));
+    background: linear-gradient(320deg, rgb(134, 186, 255), rgb(230, 150, 255));
     font-family:'Segoe UI';
 }
 
 h1 {
-    text-shadow: 0 0 10px rgba(0,0,0,0.2);
     text-align: center;
     font-size: 40px;
     padding: 0;
-    margin: 100px 0 30px 0;
+    margin: 20px 0 30px 0;
     color: #000;
 }
 
@@ -26,7 +25,6 @@ p {padding: 10px;}
     text-align:center;
     text-shadow: 0;
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
 
 .container {
@@ -42,23 +40,26 @@ p {padding: 10px;}
 .text_border {
     width: auto;
     height: auto;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.01);
     margin: 30px 0 30px 0;
     text-align: center;
-    padding: 10пшеpx;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 10px;
 }
 
 .btn {
     width: 40px;
     height: 40px;
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
-    border: none;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.01);
     text-align: center;
     transition-duration: 0.2s;
-    background-color: #fff;
     margin-right: 10px;
     padding: auto;
 }
@@ -66,21 +67,26 @@ p {padding: 10px;}
     background-color: rgb(201, 201, 201);
 }
 
+.btn:active{
+    background-color: rgb(249, 181, 255);
+}
+
 .pad {padding: 5px;}
 
-.btn_rad {box-shadow: none; border-radius: none;}
+.btn_rad {background: none; border-radius: none; border: none; backdrop-filter: none;}
 
 .text_field {
     width: auto;
     height: 30px;
-    background-color: #fff;
-    border: 0;
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.01);
     text-align: left;
     padding: 5px;
     margin-right: 10px;
     margin-top: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .anim {
@@ -104,4 +110,14 @@ p {padding: 10px;}
 
 .calc_field {
     width: auto;
+}
+
+.wrapper {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    padding: 30px;
+    margin: 20px;
 }
