@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    background: linear-gradient(320deg, rgb(168, 214, 252), rgb(217, 184, 255), rgb(177, 110, 197));
+    background: #C1E3D6;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@ body{
 }
 
 .btn {
-    background: rgb(198, 146, 218);
+    background: #84C7AE;
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.01);
     height: 90px;
@@ -85,4 +85,26 @@ body{
     font-size: 23.011px;
     line-height: 30px;
     text-align: center;
+}
+
+.rectangle1 {
+    position: absolute;
+    width: 750px;
+    height: 750px;
+    left: 1200px;
+    top: 550px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 160px;
+    transform: rotate(-45deg);
+}
+
+.rectangle2 {
+    position: absolute;
+    width: 750px;
+    height: 750px;
+    left: -411px;
+    top: -250px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 160px;
+    transform: rotate(-45deg);
 }
