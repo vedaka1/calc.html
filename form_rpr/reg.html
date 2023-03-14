@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style_reg.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form class="form">
+            <label for="name">Имя пользователя</label>
+            <input type="text" id="name" class="text_field" placeholder="Введите имя">
+            <label for="pass">Пароль</label>
+            <input type="password" id="pass" class="text_field" placeholder="Введите пароль">
+            <div class="text"">Пароль должен содержать от 4 до 12 символов</div>
+            <label for="mail">Email</label>
+            <input type="text" id="mail" class="text_field" placeholder="Введите адрес электронной почты"></input>
+            <div class="text">Пример: example@gmail.com</div>
+            <div>
+                <input type="checkbox" id="check">
+                <label for="check">Подписаться на еженедельную рассылку</label>
+            </div>
+            <div>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label>
+                  <label for="switch">Оповещения от сайта в браузере</label>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
