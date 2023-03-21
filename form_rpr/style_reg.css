@@ -44,6 +44,11 @@ label:not(:first-child) {
     color: rgba(0, 0, 0, 0.5);
     align-self: center;
 }
+
+.text_field:focus{
+  border-color: #7A5CFA;
+}
+
 .switch {
     position: relative;
     display: inline-block;
@@ -103,4 +108,85 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.buttons {
+  gap: 10px;
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+
+.btn {
+  width: 172px;
+  height: 56px;
+  border-radius: 8px;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.btn.btn1 {
+  background: #FFFFFF;
+  border: 1px solid #7A5CFA;
+  color: #7A5CFA;
+}
+
+.btn.btn2 {
+  background: #7A5CFA;
+  color: #FFFFFF;
+  border: none;
+}
+
+.choices {
+  margin-top: 32px;
+  height: 136px;
+  background: rgba(122, 92, 250, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.radio {
+  width: 24px;
+  height: 24px;
+  left: 0px;
+  top: 0px;
+
+  /* W Background */
+
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 32px;
+}
+
+.check {
+  margin-top: 32px;
+  width: 24px;
+  height: 24px;
+  left: 0px;
+  top: 0px;
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 8px;
+}
+
+.switch-div {
+  margin-top: 32px;
+}
+
+.label-rad {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.group-choice {
+  display: inline;
 }

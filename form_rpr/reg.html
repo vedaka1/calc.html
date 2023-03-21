@@ -22,15 +22,34 @@
             <input type="text" id="mail" class="text_field" placeholder="Введите адрес электронной почты"></input>
             <div class="text">Пример: example@gmail.com</div>
             <div>
-                <input type="checkbox" id="check">
+                <input type="checkbox" id="check" class="check">
                 <label for="check">Подписаться на еженедельную рассылку</label>
             </div>
-            <div>
+            <div class="switch-div">
                 <label class="switch">
                     <input type="checkbox">
                     <span class="slider round"></span>
                   </label>
                   <label for="switch">Оповещения от сайта в браузере</label>
+            </div>
+            <div class="choices">
+                <div class="group-choice"><input type="radio" id="teacher" class="radio" name="group1">
+                    <label for="teacher" class="label-rad">Преподаватель</label></div>
+                <div class="group-choice"><input type="radio" id="student" class="radio" name="group1">
+                    <label for="student">Студент</label></div>
+                <div class="group-choice"><input type="radio" id="arb" class="radio" name="group1">
+                    <label for="arb">Абитуриент</label></div>
+            </div>
+            <label for="city">В каком городе Архангельской области вы сейчас проживаете</label>
+            <select name="user_city" id="city" class="text_field">
+                <option value="1">Архангельск</option>
+                <option value="2">Северодвинск</option>
+                <option value="3">Новодвинск</option>
+                <option value="4">Другое</option>
+            </select>
+            <div class="buttons">
+                <button class="btn btn1">Отмена</button>
+                <button class="btn btn2">Сохранить</button>
             </div>
         </form>
     </div>
