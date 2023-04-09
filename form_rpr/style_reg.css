@@ -28,7 +28,7 @@ body {
     flex-direction: column;
 }
 
-label:not(:first-child) {
+.label-text:not(:first-child) {
     margin-top: 32px;
 }
 
@@ -48,12 +48,17 @@ label:not(:first-child) {
 .text_field:focus{
   border-color: #7A5CFA;
 }
+.switch-div {
+  margin-top: 32px;
+  display: flex;
+}
 
 .switch {
     position: relative;
     display: inline-block;
     width: 49px;
     height: 24px;
+    border-color: #666666;
   }
   
   /* Hide default HTML checkbox */
@@ -77,11 +82,12 @@ label:not(:first-child) {
 
 .slider:before {
   position: absolute;
+  border: 1px solid #CCCCCC;
   content: "";
   height: 18px;
   width: 18px;
   left: 4px;
-  bottom: 3px;
+  bottom: 2px;
   background-color:  #F4F4F4;
   -webkit-transition: .4s;
   transition: .4s;
@@ -96,7 +102,7 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(23  px);
+  -webkit-transform: translateX(23px);
   -ms-transform: translateX(23px);
   transform: translateX(23px);
 }
@@ -104,6 +110,7 @@ input:checked + .slider:before {
 /* Rounded sliders */
 .slider.round {
   border-radius: 34px;
+  border: 1px solid #CCCCCC;
 }
 
 .slider.round:before {
@@ -124,7 +131,7 @@ input:checked + .slider:before {
   border-radius: 8px;
   font-family: 'Noto Sans';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
 }
@@ -163,16 +170,45 @@ input:checked + .slider:before {
   border: 1px solid #CCCCCC;
   border-radius: 32px;
 }
-
-.check {
+.check-div {
   margin-top: 32px;
-  width: 24px;
-  height: 24px;
-  left: 0px;
-  top: 0px;
-  background: #FFFFFF;
+  display: flex;
+}
+
+.checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 20px;
+}
+.checkbox + label {
+	position: relative;
+	padding: 0 0 0 60px;
+	cursor: pointer;
+}
+.checkbox + label:before {
+	content: '';
+	position: absolute;
+	top: -4px;
+	left: 0;
+	width: 24px;
+	height: 24px;
+	border-radius: 8px;
+	background:#FFFFFF;
   border: 1px solid #CCCCCC;
-  border-radius: 8px;
+	transition: .2s;
+}
+.checkbox + label:after {
+	content: '';
+	position:absolute;
+	top: -3px;
+	left: 8px;
+
+}
+
+.checkbox:checked + label:after {
+  content: '✓';
+  
 }
 
 .switch-div {
@@ -182,11 +218,17 @@ input:checked + .slider:before {
 .label-rad {
   font-family: 'Noto Sans';
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 14px;
   line-height: 24px;
+  margin-top: auto;
+  margin-left: 16px;
+}
+
+.label-rad.checkbox1 {
+  margin-left: 0px;
 }
 
 .group-choice {
-  display: inline;
-}
+    display: flex;
+} 

@@ -13,34 +13,34 @@
 <body>
     <div class="container">
         <form class="form">
-            <label for="name">Имя пользователя</label>
+            <label for="name" class="label-text">Имя пользователя</label>
             <input type="text" id="name" class="text_field" placeholder="Введите имя">
-            <label for="pass">Пароль</label>
+            <label for="pass" class="label-text">Пароль</label>
             <input type="password" id="pass" class="text_field" placeholder="Введите пароль">
             <div class="text"">Пароль должен содержать от 4 до 12 символов</div>
-            <label for="mail">Email</label>
+            <label for="mail" class="label-text">Email</label>
             <input type="text" id="mail" class="text_field" placeholder="Введите адрес электронной почты"></input>
             <div class="text">Пример: example@gmail.com</div>
-            <div>
-                <input type="checkbox" id="check" class="check">
-                <label for="check">Подписаться на еженедельную рассылку</label>
+            <div class="check-div">
+                <input type="checkbox" class="checkbox" id="checkbox" />
+                <label for="checkbox" class="label-rad checkbox1">Подписаться на еженедельную рассылку</label>
             </div>
             <div class="switch-div">
                 <label class="switch">
                     <input type="checkbox">
                     <span class="slider round"></span>
                   </label>
-                  <label for="switch">Оповещения от сайта в браузере</label>
+                  <label for="switch" class="label-rad">Оповещения от сайта в браузере</label>
             </div>
             <div class="choices">
                 <div class="group-choice"><input type="radio" id="teacher" class="radio" name="group1">
                     <label for="teacher" class="label-rad">Преподаватель</label></div>
                 <div class="group-choice"><input type="radio" id="student" class="radio" name="group1">
-                    <label for="student">Студент</label></div>
+                    <label for="student" class="label-rad">Студент</label></div>
                 <div class="group-choice"><input type="radio" id="arb" class="radio" name="group1">
-                    <label for="arb">Абитуриент</label></div>
+                    <label for="arb" class="label-rad">Абитуриент</label></div>
             </div>
-            <label for="city">В каком городе Архангельской области вы сейчас проживаете</label>
+            <label for="city" class="label-text">В каком городе Архангельской области вы сейчас проживаете</label>
             <select name="user_city" id="city" class="text_field">
                 <option value="1">Архангельск</option>
                 <option value="2">Северодвинск</option>
