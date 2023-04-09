@@ -46,7 +46,7 @@ body {
 }
 
 .text_field:focus{
-  border-color: #7A5CFA;
+  border: 1px solid #7A5CFA;
 }
 .switch-div {
   margin-top: 32px;
@@ -98,7 +98,7 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #7A5CFA;
+  border: 1px solid #7A5CFA;
 }
 
 input:checked + .slider:before {
@@ -208,8 +208,12 @@ input:checked + .slider:before {
 
 .checkbox:checked + label:after {
   content: '✓';
-  
 }
+
+.checkbox:focus + label:before {
+  border: 1px solid #7A5CFA;
+}
+
 
 .switch-div {
   margin-top: 32px;
