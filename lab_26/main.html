@@ -23,40 +23,41 @@
 <body class="base">
     <header class="container head1" id="time">Заголовок</header>
     <div class="container font">
-        <div><input type="text" class="text_field name_field font" id="name_field">
-            <label for="name_field">Введите ФИО</label></div>
-        <div><input type="date" class="text_field date_field font" id="date_field">
-            <label for="date_field">Введите дату рождения</label></div>
-        <div><input type="text" class="text_field hobby_field font" id="hobby_field" placeholder="Рисование, спорт...">
-            <label for="hobby_field">Тут вы можете написать свои увлечения</label></div>
-        <div><button class="btn1 font" id="btn1" onclick="getName()">Нажми</button></div>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="https://cojo.ru/wp-content/uploads/2022/12/oboi-minimalizm-24-1.webp" alt="Первый слайд">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="https://kartinkin.net/uploads/posts/2021-07/thumbs/1625779412_22-kartinkin-com-p-krasivie-minimalistichnie-oboi-krasivie-23.jpg" alt="Второй слайд">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="https://storge.pic2.me/cm/2560x1600/734/580bbcdb34b56.jpg" alt="Третий слайд">
-              </div>
+        <div>
+            <div><input type="text" class="text_field name_field font" id="name_field">
+                <label for="name_field">Введите ФИО</label></div>
+            <div><input type="date" class="text_field date_field font" id="date_field">
+                <label for="date_field">Введите дату рождения</label></div>
+            <div><input type="text" class="text_field hobby_field font" id="hobby_field" placeholder="Рисование, спорт...">
+                <label for="hobby_field">Тут вы можете написать свои увлечения</label></div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://cojo.ru/wp-content/uploads/2022/12/oboi-minimalizm-24-1.webp" alt="Первый слайд">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://storge.pic2.me/cm/2560x1600/734/580bbcdb34b56.jpg" alt="Третий слайд">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
         </div>
-        <input type="text" id="result_field" class="text_field font">
+        <div class="double-row">
+            <!-- <input type="text" id="result_field" class="text_field font result_field"> -->
+            <span id="result_date_field" class="text_field font result_field"></span>
+            <div><button class="btn1 font" id="btn1" onclick="getName()">Нажми</button></div>
+        </div>
     </div>
 </body>
 </html>
