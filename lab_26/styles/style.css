@@ -1,7 +1,8 @@
 *{box-sizing:border-box; margin: 0; padding: 0;}
 
 .base {
-    background: linear-gradient(320deg, rgb(165, 145, 255), rgb(205, 161, 255), rgb(168, 214, 252));
+    background: rgb(160, 168, 189);
+    /* background-image: url('"C:/Users/Владислав/Desktop/calc_html/lab_26/images/autumn.jpg"'); */
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -12,6 +13,8 @@
     line-height: 18px;
     color: #666666;
     height: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
 }
 
 .font {
@@ -31,8 +34,8 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     display: flex;
     height: 100%;
 }
@@ -49,12 +52,14 @@
 
 .name_field {
     width: 50%;
+    height: 30px;
 }
 
 .date_field {
     margin-top: 10px;
     padding: 10px;
     width: 50%;
+    height: 30px;
 }
  
 .hobby_field {
@@ -65,7 +70,7 @@
 
 .btn1 {
     border-radius: 8px;
-    background: rgba(201, 142, 255, 0.788);
+    background: rgba(109, 109, 109, 0.349);
     border: 0px solid rgba(0, 0, 0, 0.1);
     padding: 10px;
     margin-top: 10px;
@@ -73,7 +78,7 @@
 }
 
 .btn1:active {
-    background: rgba(122, 92, 250, 0.3);
+    background: rgba(201, 201, 201, 0.3);
 }
 
 .carousel {
