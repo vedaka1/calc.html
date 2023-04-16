@@ -43,7 +43,7 @@
     border-radius: 8px;
     /* background: #ffffffce; */
     background: rgba(255, 255, 255, 0.5);
-    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     height: 30px;
     padding: 10px;
     backdrop-filter: blur(5px);
