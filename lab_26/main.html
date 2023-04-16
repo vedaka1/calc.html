@@ -10,7 +10,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> 
     <!-- JS -->
     <script src="main.js"></script>
     <!-- Bootstrap CSS (Cloudflare CDN) -->
@@ -20,8 +20,8 @@
     <!-- Bootstrap Bundle JS (Cloudflare CDN) -->
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js" integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-<body class="base" id="base" onload="image()">
-    <header class="container head1" id="time">Заголовок</header>
+<body class="base" id="base" onload="load()">
+    <header class="container head1" id="time">Лабораторная номер 26</header>
     <div class="container font">
         <div>
             <div><input type="text" class="text_field name_field font" id="name_field">
@@ -29,7 +29,7 @@
             <div><input type="date" class="text_field date_field font" id="date_field">
                 <label for="date_field">Введите дату рождения</label></div>
             <div><input type="text" class="text_field hobby_field font" id="hobby_field" placeholder="Рисование, спорт...">
-                <label for="hobby_field">Тут вы можете написать свои увлечения</label></div>
+                <label for="hobby_field" class="label1">Тут вы можете написать свои увлечения</label></div>
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -55,7 +55,7 @@
         </div>
         <div class="double-row">
             <!-- <input type="text" id="result_field" class="text_field font result_field"> -->
-            <span id="result_date_field" class="text_field font result_field"></span>
+            <span id="result_date_field" class="text_field font result_field">Тут будет выводиться информация</span>
             <div><button class="btn1 font" id="btn1" onclick="getName()">Нажми</button></div>
         </div>
     </div>
