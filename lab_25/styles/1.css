@@ -22,15 +22,15 @@ body {
     box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
     display: flex;
     flex-direction: row;
-    max-width: 220px;
+    width: 400px;
     max-height: fit-content;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 
 .head {
     margin-top: 20px;
-    max-width: 300px;
 }
 
 .main-item {
@@ -40,12 +40,14 @@ body {
 .item {
     display: flex;
     margin: 5px;
+    padding: 5px;
     min-width: 50px;
     min-height: 50px;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
     box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    flex-grow: 1;
 }
 
 .btn {
@@ -57,12 +59,16 @@ body {
     padding: 8px;
 }
 
+.item:nth-child(1n+1) {
+    flex-basis: 30%;
+}
+
 p {
     margin: 10px;
 }
 
 @media (max-width: 600px) {
-    .container {
-        flex-direction: column;
+    .item:nth-child(1n+1) {
+        flex-basis: 100%;
     }
 }
